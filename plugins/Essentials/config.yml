@@ -1,0 +1,47 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                EssentialsX Config                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Команды которые ЗАПРЕЩЕНЫ обычным игрокам
+# (настраивается через LuckPerms)
+
+# Стартовые предметы при первом входе
+newbies:
+  kit: start
+  spawnpoint: spawn
+
+# Экономика
+economy:
+  starting-balance: 500
+  currency-symbol: '$'
+  currency-symbol-suffix: false
+
+# Спавн
+spawn:
+  respawn-at-home: false
+
+# Команды
+# /kit, /home, /sethome, /spawn, /tpa, /warp
+  
+kits:
+  start:
+    delay: 0
+    items:
+      - iron_sword 1 name:&eНачальный_Меч
+      - iron_pickaxe 1 name:&eНачальная_Кирка
+      - iron_axe 1 name:&eНачальный_Топор
+      - iron_shovel 1 name:&eНачальная_Лопата
+      - iron_hoe 1 name:&eНачальная_Мотыга
+      - cooked_beef 32 name:&eЕда
+      - torch 64
+      - oak_planks 64
+      - crafting_table 1
+
+# Запрет команд для обычных пользователей (через permissions)
+  
+# Настройки chat
+chat:
+  radius: 0
+  format: '&8[&7{DISPLAYNAME}&8] &f{MESSAGE}'

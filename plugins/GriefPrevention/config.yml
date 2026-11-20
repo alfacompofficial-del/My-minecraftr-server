@@ -1,0 +1,42 @@
+################################
+# GriefPrevention Config
+# Защита территорий топориком
+################################
+
+# Настройки системы привата
+GriefPrevention:
+  Claims:
+    # Включить систему кланов/приватов
+    Mode: Survival
+    
+    # Инструмент для создания привата
+    ModificationToolId: WOODEN_AXE
+    InspectionToolId: STICK
+    
+    # Начальное количество блоков при первом входе
+    InitialBlocks: 100
+    
+    # Максимальное количество приватов для обычного пользователя
+    MaxClaimsPerPlayer: 1
+    
+    # Минимальный размер привата
+    MinimumSize: 10
+    
+    # Защита от взрывов
+    ExplosivesInClaims: false
+    EnderPearlsRequireAccessTrust: true
+    
+    # Расстояние от мирового спавна (spawn protection)
+    ProtectFreshSpawns: false
+    
+    AutomaticNewPlayerProtection: true
+    
+  BlockSkyTrees: false
+  
+  PvP:
+    # PvP разрешен вне приватов
+    ProtectClaimedPlayersFromPvP: true
+    # В привате нельзя PvP без разрешения
+    
+  Siege:
+    Enabled: false

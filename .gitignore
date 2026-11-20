@@ -1,0 +1,43 @@
+# ============================================
+# .gitignore для Minecraft сервера
+# ============================================
+
+# Игровые данные (не нужны в репозитории)
+world/
+world_nether/
+world_the_end/
+cache/
+logs/
+*.log
+crash-reports/
+
+# Большие JAR файлы (загружаются отдельно)
+paper.jar
+paper-*.jar
+# ОСТАВЛЯЕМ плагины в репо (они нужны для деплоя)
+# plugins/*.jar  <-- НЕ игнорируем!
+
+# Временные файлы
+*.tmp
+*.bak
+usercache.json
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+
+# Данные игроков
+plugins/AuthMe/data/
+plugins/LuckPerms/json-storage/
+plugins/EssentialsX/userdata/
+plugins/GriefPrevention/PlayerData/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

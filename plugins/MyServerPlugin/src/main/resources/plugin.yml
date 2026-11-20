@@ -1,0 +1,38 @@
+name: MyServerPlugin
+version: 1.0.0
+main: ru.myserver.MyServerPlugin
+api-version: 1.19
+authors: [Bilol29146192]
+description: Основной плагин сервера - скорборд, таблист, стартовый кит
+
+depend:
+  - LuckPerms
+  - Vault
+
+softdepend:
+  - AuthMe
+  - EssentialsX
+  - GriefPrevention
+
+commands:
+  kit:
+    description: Получить стартовый набор
+    usage: /kit <название>
+    aliases: [kit]
+  setspawn:
+    description: Установить точку спавна
+    permission: server.admin
+  authspawn:
+    description: Установить точку для неавторизованных
+    permission: server.admin
+
+permissions:
+  server.admin:
+    description: Права администратора
+    default: op
+  server.user:
+    description: Права обычного пользователя
+    default: true
+  kit.start:
+    description: Доступ к стартовому киту
+    default: true

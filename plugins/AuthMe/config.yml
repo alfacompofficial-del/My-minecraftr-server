@@ -1,0 +1,56 @@
+# ============================================
+#   AuthMe Config - Авторизация на сервере
+# ============================================
+
+DataSource:
+  backend: SQLite
+
+settings:
+  registration:
+    enabled: true
+    force: true
+    # Игрок висит в воздухе пока не авторизован
+    
+  restrictions:
+    allowMovement: false
+    allowFlight: false
+    allowCommands:
+      - /login
+      - /register
+      - /l
+      - /reg
+    # Запрет взаимодействий до входа
+    
+  teleport:
+    # Телепорт на высоту при подключении (до авторизации)
+    spawnOnJoin: AUTH_SPAWN
+    teleportUnAuthedToSpawn: true
+    
+  security:
+    minPasswordLength: 4
+    maxPasswordLength: 20
+    
+  registration:
+    messageInterval: 10
+    
+  messages:
+    language: ru
+    
+  HelpHeader: '&6=== &eАвторизация &6==='
+  
+  # Локация для неавторизованных (высокая точка)
+  AuthWorldSpawn:
+    world: world
+    x: 0.5
+    y: 255
+    z: 0.5
+    yaw: 0
+    pitch: 0
+
+# После авторизации - телепорт на спавн
+afterLoginTeleport: true
+afterLoginTeleportLocation:
+  world: world
+  x: 0.5
+  y: 65
+  z: 0.5

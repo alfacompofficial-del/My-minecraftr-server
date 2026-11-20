@@ -1,0 +1,15 @@
+################################
+# EssentialsX Spawn Config
+################################
+
+# При входе - всегда на спавн (после авторизации)
+newbies:
+  spawnpoint: spawn
+  kit: ''
+
+# При смерти - телепорт на спавн
+respawn-listener-priority: high
+
+# Точки спавна
+spawnpoints:
+  world: world

@@ -1,0 +1,57 @@
+# =============================================
+# Скрипт настройки прав LuckPerms
+# Запускать в консоли сервера или через RCON
+# =============================================
+
+# === ГРУППА USER (обычный игрок) ===
+lp creategroup user
+lp group user permission set essentials.spawn true
+lp group user permission set essentials.home true
+lp group user permission set essentials.sethome true
+lp group user permission set essentials.home.multiple.1 true
+lp group user permission set essentials.tpa true
+lp group user permission set essentials.tpaccept true
+lp group user permission set essentials.warp true
+lp group user permission set essentials.list true
+lp group user permission set essentials.msg true
+lp group user permission set essentials.r true
+lp group user permission set essentials.balance true
+lp group user permission set essentials.pay true
+lp group user permission set griefprevention.createclaims true
+lp group user permission set griefprevention.claimslistother false
+lp group user permission set worldedit.* false
+lp group user permission set server.user true
+lp group user permission set kit.start true
+# Запрет опасных команд
+lp group user permission set essentials.kill false
+lp group user permission set essentials.ban false
+lp group user permission set essentials.unban false
+lp group user permission set essentials.kick false
+lp group user permission set essentials.op false
+lp group user permission set essentials.gamemode false
+lp group user permission set essentials.give false
+lp group user permission set essentials.tp false
+lp group user permission set bukkit.command.ban false
+lp group user permission set bukkit.command.unban false
+lp group user permission set bukkit.command.kill false
+lp group user permission set bukkit.command.op false
+lp group user permission set bukkit.command.deop false
+
+# === ГРУППА ADMIN ===
+lp creategroup admin
+lp group admin permission set * true
+lp group admin setweight 100
+lp group admin meta set prefix "&c[ADMIN] &r"
+lp group admin permission set server.admin true
+
+# === ГРУППА USER - ПРЕФИКС ===
+lp group user setweight 10
+lp group user meta set prefix "&7[USER] &r"
+
+# === НАЗНАЧИТЬ ДЕФОЛТНУЮ ГРУППУ ===
+lp group default parent set user
+
+# === НАЗНАЧИТЬ СЕБЯ АДМИНОМ ===
+lp user Bilol29146192 parent set admin
+
+echo "=== Права настроены! ==="

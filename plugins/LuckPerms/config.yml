@@ -1,0 +1,20 @@
+################################
+# LuckPerms Config
+################################
+
+# Хранилище данных
+storage-method: h2
+
+# Синхронизация
+sync-minutes: -1
+
+# Настройки по умолчанию
+apply-wildcards: true
+apply-regex: false
+apply-parents-in-world-context: true
+
+log-notify: true
+
+# Контекст
+contexts:
+  default-contexts: {}

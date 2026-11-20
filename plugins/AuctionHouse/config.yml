@@ -1,0 +1,31 @@
+################################
+# Auction House Config
+# /ah - просмотр аукциона
+# /ah sell <цена> - продать предмет в руке
+################################
+
+settings:
+  max-listings-per-player: 10
+  listing-fee-percentage: 5.0
+  listing-duration: 168
+  minimum-price: 1.0
+  maximum-price: 10000000.0
+  
+gui:
+  title: '&6&l⭐ Аукционный Дом ⭐'
+  rows: 6
+  
+messages:
+  listing-created: '&a[AH] &fТовар выставлен за &e{price}$'
+  listing-sold: '&a[AH] &fПродан &e{item} &fза &a{price}$'
+  listing-bought: '&a[AH] &fКуплен &e{item} &fза &a{price}$'
+  listing-expired: '&c[AH] &fЛот &e{item} &fистёк.'
+  not-enough-money: '&c[AH] &fНедостаточно средств!'
+  no-item-in-hand: '&c[AH] &fВозьмите предмет в руку!'
+  
+sort-by: RECENT
+
+sounds:
+  enabled: true
+  buy: ENTITY_PLAYER_LEVELUP
+  sell: ENTITY_EXPERIENCE_ORB_PICKUP

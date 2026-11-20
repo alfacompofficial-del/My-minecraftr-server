@@ -1,0 +1,21 @@
+################################
+# AuthMe Reloaded - Русские сообщения
+################################
+
+login:
+  login: '&aВы успешно вошли!'
+  wrongPassword: '&cНеправильный пароль!'
+  unregistered: '&cВы не зарегистрированы!'
+  
+register:
+  registration: '&aВы успешно зарегистрированы!'
+  passwordMismatch: '&cПароли не совпадают!'
+  
+defaults:
+  notRegistered: '&cВведите: &e/register <пароль> <пароль>'
+  notLogged: '&cВведите: &e/login <пароль>'
+  timeLeft: '&eУ вас есть &6%time% &eсекунд чтобы войти'
+  
+misc:
+  kickFailed: '&cВы были отключены'
+  tooManyIpRegistrations: '&cС вашего IP уже зарегистрировано много аккаунтов'
